@@ -1,0 +1,461 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <title>
+    Emotion Poster
+  </title>
+  <style>
+
+  body{
+  	background-image: url(bluebackground.png);
+    background-position: center;
+  }
+
+  .tetris{
+        width: 1000px;
+        height: 600px;
+        margin: 0 auto;
+        position: relative;
+      }
+   
+   .frame{
+   	background-image: url(frame.png);
+   	width: 1000px;
+   	height: 751px;
+   	margin: 0 auto;
+    right:320px;
+   	position: relative;
+
+   } 
+
+   #screen{
+   		transition: all 0.25s ease;
+		width: 355px;
+    height: 750px;
+    margin: 0 auto;
+		background-color:white;
+    position: relative;
+   }
+
+   .HOLD{
+    width: 130PX;
+    height: 130PX;
+    right: 143PX;
+    bottom: 750PX; 
+    position: relative;
+    background-color: white;
+    border: 5px solid #1a75ff;
+   }
+
+.NEXT{
+    width: 130PX;
+    height: 130PX;
+    left: 367px;
+    bottom: 880PX; 
+    position: relative;
+    background-color: white;
+    border: 5px solid #1a75ff;
+   }
+
+   .T1n{
+    position: absolute;
+    left: 367px;
+    animation: dropout&n 0.1s forwards;
+    animation-delay: 0S;
+    opacity: 0;
+   }
+@keyframes dropout&n {
+  from {
+    opacity: 1;
+    top: 0px
+  }
+  to {
+    opacity: 1;
+    top: 50px;
+  }
+}
+
+   .T1{
+    position: absolute;
+    left: 8px;
+    animation: dropout 0.5s forwards;
+    animation-delay: 0S;
+    opacity: 0;
+   }
+
+.T2{
+    position: absolute;
+    left: 77px;
+    animation: dropout 0.5s forwards;
+    animation-delay: 0.5S;
+    opacity: 0;
+   }
+
+.T3{
+    position: absolute;
+    left: 181px;
+    animation: dropout 0.5s forwards;
+    animation-delay: 1S;
+    opacity: 0;
+   }
+
+.T4{
+    position: absolute;
+    left: 251px;
+    animation: dropout1 0.5s forwards;
+    animation-delay: 1.5S;
+    opacity: 0;
+   }
+
+.T5{
+    position: absolute;
+    left: 320px;
+    animation: dropout1 0.5s forwards;
+    animation-delay: 2S;
+    opacity: 0;
+   }
+
+.T6{
+    position: absolute;
+    left: 8px;
+    animation: dropout1 0.5s forwards;
+    animation-delay: 2.5S;
+    opacity: 0;
+   }
+
+   .T7{
+    position: absolute;
+    left: 77px;
+    animation: dropout2 0.5s forwards;
+    animation-delay: 3S;
+    opacity: 0;
+   }
+
+.T8{
+    position: absolute;
+    left: 42px;
+    animation: dropout3 0.5s forwards;
+    animation-delay: 3.5S;
+    opacity: 0;
+   }
+
+.T9{
+    position: absolute;
+    left: 8px;
+    animation: dropout4 0.5s forwards;
+    animation-delay: 4S;
+    opacity: 0;
+   }
+
+   .T10{
+    position: absolute;
+    left: 8px;
+    animation: dropout5 0.5s forwards;
+    animation-delay: 4.5S;
+    opacity: 0;
+   }
+
+.T11{
+    position: absolute;
+    left: 8px;
+    animation: dropout6 0.5s forwards;
+    animation-delay: 5S;
+    opacity: 0;
+   }
+
+.T12{
+    position: absolute;
+    left: 180px;
+    animation: dropout7 8s forwards;
+    transform: rotate(0);
+    animation-delay: 5.5S;
+    opacity: 0;
+   }
+   @keyframes dropout7 {
+  0% {
+    opacity: 1;
+    top: 0px;
+  }
+
+  5%{
+    top: 80px;
+    left:180px;
+  }
+
+  10%{
+    top: 120px;
+    left: 180px
+  }
+
+
+  20% {
+    top: 160px;
+    left:180px;
+    transform: rotate(0deg);
+  }
+ 
+ 21%{
+  transform: rotate(90deg);
+ }
+
+ 30%{
+  top:160px;
+  left: 220px; 
+  transform: rotate(90deg);
+ }
+
+ 
+  40%{
+    top: 160px;
+    left:260px;
+    transform: rotate(90deg);
+  }
+
+  41%{
+    top: 160px;
+    left: 260px;
+    transform: rotate(0deg);
+  }
+
+  50%{
+    top: 200px;
+    left: 220px;
+    transform: rotate(0deg);
+  }
+
+  60%
+  {
+    top: 240px;
+    left:180px;
+  }
+
+  70%{
+    top: 280px;
+    left: 180px;
+  }
+
+  80%{
+    top: 320px;
+    left: 180px;
+  }
+
+  90%{
+    top: 360px;
+    left: 180px;
+  }
+
+  100%{
+    opacity: 1;
+    top: 580px;
+  }
+}
+
+
+   @keyframes dropout {
+  from {
+    opacity: 1;
+    top: 0px
+  }
+  to {
+    opacity: 1;
+    top: 650px;
+  }
+}
+
+@keyframes dropout1 {
+  from {
+    opacity: 1;
+    top: 0px
+  }
+  to {
+    opacity: 1;
+    top: 582px;
+  }
+}
+
+
+@keyframes dropout2 {
+  from {
+    opacity: 1;
+    top: 0px
+  }
+  to {
+    opacity: 1;
+    top: 616px;
+  }
+}
+
+@keyframes dropout3 {
+  from {
+    opacity: 1;
+    top: 0px
+  }
+  to {
+    opacity: 1;
+    top: 547.5px;
+  }
+}
+
+@keyframes dropout4 {
+  from {
+    opacity: 1;
+    top: 0px
+  }
+  to {
+    opacity: 1;
+    top: 478.5px;
+  }
+}
+
+@keyframes dropout5 {
+  from {
+    opacity: 1;
+    top: 0px
+  }
+  to {
+    opacity: 1;
+    top: 445px;
+  }
+}
+
+@keyframes dropout6 {
+  from {
+    opacity: 1;
+    top: 0px
+  }
+  to {
+    opacity: 1;
+    top: 342px;
+  }
+}
+
+.eliminate0{
+  position: absolute;
+    left: 9px;
+    animation: dropout9 0.01s forwards;
+    animation-delay: 13.5S;
+    opacity: 0;
+
+}
+@keyframes dropout9 {
+  from {
+    opacity: 1;
+    top: 0px
+  }
+  to {
+    opacity: 1;
+    top: 215px;
+  }
+}
+
+
+.eliminate{
+  position: absolute;
+    left: 9px;
+    animation: dropout8 0.01s forwards;
+    animation-delay: 14S;
+    opacity: 0;
+
+}
+
+@keyframes dropout8 {
+  from {
+    opacity: 1;
+    top: 0px
+  }
+  to {
+    opacity: 1;
+    top: 238px;
+  }
+}
+
+.black{
+  position: absolute;
+  left: 8px;
+  animation: dropout10 1s forwards;
+  animation-delay: 15s;
+  opacity:0;
+  width: 345px;
+  height: 720px;
+  background-color: white;
+}
+
+@keyframes dropout10 {
+  from {
+    opacity: 1;
+    top: 0px
+  }
+  to {
+    opacity: 10;
+    top: 20px;
+  }
+}
+
+.quote{
+  position: absolute;
+  left: 8px;
+  animation: dropout11 1S forwards;
+  animation-delay: 16s;
+  opacity: 0; 
+}
+@keyframes dropout11 {
+  from {
+    opacity: 1;
+    top: 0px
+  }
+  to {
+    opacity: 50;
+    top: 300px;
+  }
+}
+.button {
+    position: absolute;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    right: 30PX;
+    top: 50PX;
+  }
+
+  </style>
+</head>
+
+<body>
+
+  <button class="button"><li><a href="file:///Users/macbook/Desktop/interactive1/Poster/index.html"> PLAY AGAIN</a></li></button>
+  <div class="tetris">
+      <div id="screen">
+      <div class="frame"></div>
+      <div class="T1"><img src="_Interactive-Poster2.png"></div>
+      <div class="T1n"><img src="_Interactive-Poster2.png"></div>
+      <div class="T2"><img src="_Interactive-Poster3.png"></div>
+      <div class="T3"><img src="_Interactive-Poster.png"></div>
+      <div class="T4"><img src="_Interactive-Poster4.png"></div>
+      <div class="T5"><img src="_Interactive-Poster5.png"></div>
+      <div class="T6"><img src="_Interactive-Poster6.png"></div>
+      <div class="T7"><img src="_Interactive-Poster10.png"></div>
+      <div class="T8"><img src="_Interactive-Poster8.png"></div>
+      <div class="T9"><img src="_Interactive-Poster9.png"></div>
+      <div class="T10"><img src="_Interactive-Poster3.png"></div>
+      <div class="T11"><img src="_Interactive-Poster4.png"></div>
+      <div class="T12"><img src="_Interactive-Poster7.png"></div>
+      <div class="eliminate0"><img src="_Interactive-Poster-[Recovered]1.png"></div>
+      <div class="eliminate"><img src="_Interactive-Poster-[Recovered].png"></div>
+      <div class="black"></div>
+      <div class="quote"><img src="_Interactive-Poster-[Recovered]4.png"></div>
+      
+
+
+
+</body>
+</html>
+
