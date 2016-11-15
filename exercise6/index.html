@@ -1,0 +1,64 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+  <title>
+    exercise6
+  </title>
+  <style>
+
+
+    #dog{
+    	width: 600px;
+    	height: 1000px;
+    	background-image: url('IMG_7441 copy.png');
+    }
+
+   #dog:hover {
+	  	background-image: url('IM11G_7441 copy.png');
+	  }
+
+
+
+  </style>
+
+  <script>
+  $(document).ready(function(){
+  	
+  	$("#dog").hover(
+    		function(){
+		    	
+	    		$('#bark')[0].pause();
+	 				$('#bark')[0].currentTime = 0;
+		    	$('#bark')[0].play();
+    		}, 
+    		function() {
+		    	
+		  	}
+    	);
+
+  });
+
+  </script>
+</head>
+
+
+<body>
+  
+  <div id="dog"></div>
+
+  <audio id="bark">
+  	<source src="bark.wav" type="audio/wav">
+  </audio>
+
+
+
+</body>
+</html>
+
+
