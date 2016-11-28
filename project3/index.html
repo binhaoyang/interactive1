@@ -1,0 +1,223 @@
+<!doctype html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+<html lang="en">
+<head>
+
+
+  <title>
+    Project 3
+  </title>
+  <style>
+body{
+  	margin: 0;
+  }
+
+  .box{
+  	height: 750px;
+  	background-size: cover;
+  	background-position: center center;
+  	text-align: center;
+  	padding: 25px;
+  	position: relative;
+
+  }
+
+  .s1{background-image: url(t6.JPG);}
+  .t8{background-image: url(t8.JPG);}
+  .s2{background-image: url(b12.JPG);}
+
+
+  .nav {
+  	position: absolute;
+  	left: 50%;
+  	margin-left: -300px;
+  	width: 600px;
+  	height: 300px;
+
+  }
+
+  .nav.day {
+  	bottom: 0;
+  }
+
+  .nav.night {
+  	top: 0;
+  }
+
+ button{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+ 	font-size: 2.0em;
+ 	cursor: pointer;
+ 	position: absolute;
+	margin-left: -25px;
+	border: none;
+	color: white;
+ }
+
+
+#btn-t6l{
+	left: 0px;
+	bottom: 0px;
+	background-color: #FAA71A;
+
+}
+
+#btn-t8{
+	left: 13%;
+	bottom: 110px;
+	background-color: #F58120;
+
+}
+
+#btn-t10{
+	left: 30%;
+	bottom: 170px;
+	background-color: #F26722;
+
+}
+
+#btn-t12{
+	left: 50%;
+	bottom: 200px;
+	background-color: #F05023;
+}
+
+#btn-t2{
+	left: 70%;
+	bottom: 170px;
+	background-color: #ED2024;
+
+}
+
+#btn-t4{
+	left: 87%;
+	bottom: 110px;
+	background-color: #F05023;
+
+}
+
+#btn-t6r{
+	left: 100%;
+	bottom: 0px;
+	background-color: #F26722;
+
+}
+
+ .night button {
+ 	background-color: blue;
+
+ }
+
+ #btn-b8{
+ 	left: 87%;
+	top: 110px;
+	background-color: #4E232D;
+
+}
+#btn-b10{
+	left: 70%;
+	top: 170px;
+	background-color: #221129;
+
+}
+
+#btn-b12{
+	left: 50%;
+	top: 200px;
+	background-color: #12131E;
+
+}
+
+#btn-b2{
+	left: 30%;
+	top: 170px;
+	background-color: #221129;
+
+}
+
+#btn-b4{
+	left: 13%;
+	top: 110px;
+	background-color: #4E232D;
+
+}
+
+
+  </style>
+
+  <script>
+  	$(document).ready(function() {
+
+  		$("btn-t6l").click(function() {
+  		
+  			$(".box s1").css({'background-image': 'url(t6.JPG)' });
+
+		});
+
+		
+		$("btn-t8").click(function() {
+  		
+  			$(".box.s1").css({'background-image': 'url(t8.JPG)' });
+
+		});
+  	
+
+  		$("btn-b4").click(function() {
+  			$(".box s2").css({'background-image': 'url(t12.JPG)' });
+			});
+
+  		$("btn-b8").click(function() {
+  			$(".box s2").css({'background-image': 'url(b8.JPG)' });
+			});
+  		
+
+
+  </script>
+</head>
+
+
+<body>
+
+
+  
+
+
+
+  
+  <div class="box s1">
+  	
+	  <div class="nav day">
+		<button id="btn-t6l">6</button>
+		<button id="btn-t8">8</button>
+		<button id="btn-t10">10</button>
+		<button id="btn-t12">12</button>
+		<button id="btn-t2">2</button>
+		<button id="btn-t4">4</button>
+		<button id="btn-t6r">6</button>
+	  </div>
+
+  </div>
+
+  <div class="box s2">
+  	
+  	
+	  <div class="nav night">
+		<button id="btn-b8">8</button>
+		<button id="btn-b10">10</button>
+		<button id="btn-b12">12</button>
+		<button id="btn-b2">2</button>
+		<button id="btn-b4">4</button>
+	  </div>
+
+  </div>
+  
+
+
+</body>
+</html>
