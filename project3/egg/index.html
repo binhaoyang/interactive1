@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en" class>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  <title>
+    Exercise 8
+  </title>
+
+  <style>
+
+  	.fancybox-title {
+  		font-size:1.0em;
+  	}
+
+    .Home{
+      position: relative;
+      top: 200px;
+    }
+
+
+
+  </style>
+
+  <script>
+		$(document).ready(function() {
+
+			$(".fancybox").fancybox({
+				nextEffect:'none',
+        prevEffect:'none'
+			});
+
+		});
+  </script>
+
+
+
+</head>
+<body>
+  
+		<a class="fancybox" rel="mt_shasta" href="1.jpg" title="Rice plate with egg">
+    <img src="1_thumb.png" />
+    </a>
+
+		<a class="fancybox" rel="mt_shasta" href="2.jpg" title="Fried spring rolls">
+		<img src="2_thumb.png" />	
+		</a>
+
+    <div class="Home"><a href="../index.html"><img src="back-blue-button-xs.jpg" height="60" ></a></div>
+
+		
+</body>
+
+</html>

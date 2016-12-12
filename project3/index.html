@@ -14,6 +14,35 @@
 body{
   	margin: 0;
   }
+.boxm1{
+	height: 150px;
+	width: 300px;
+  	background-size: contain; 
+  	background-position: center center;
+  	text-align: center;
+  	position: relative;
+  	left: 25%;
+  	bottom: -140px;
+  	background-image: url(t6.png)
+
+  }
+
+.boxm2{
+	height: 150px;
+	width: 300px;
+  	background-size: contain; 
+  	background-position: center center;
+  	text-align: center;
+  	position: relative;
+  	left: 25%;
+  	bottom: -10px;
+  	background-image: url(b8.png);
+    
+
+  }
+ 
+  
+
 
   .box{
   	height: 750px;
@@ -22,21 +51,22 @@ body{
   	text-align: center;
   	padding: 25px;
   	position: relative;
+	transition: all 1s ease;
 
   }
 
   .s1{background-image: url(t6.JPG);}
-  .t8{background-image: url(t8.JPG);}
-  .s2{background-image: url(b12.JPG);}
+  .s2{background-image: url(b8.JPG);}
 
 
+ 
   .nav {
   	position: absolute;
   	left: 50%;
   	margin-left: -300px;
   	width: 600px;
   	height: 300px;
-
+  	z-index: 10;
   }
 
   .nav.day {
@@ -51,14 +81,18 @@ body{
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  cursor: pointer;
  	font-size: 2.0em;
  	cursor: pointer;
  	position: absolute;
 	margin-left: -25px;
 	border: none;
 	color: white;
+	transition: all 0.5s ease;
  }
+
+ button:hover {
+    transform: scale(1.8);
+}
 
 
 #btn-t6l{
@@ -86,7 +120,8 @@ body{
 	left: 50%;
 	bottom: 200px;
 	background-color: #F05023;
-}
+
+}	
 
 #btn-t2{
 	left: 70%;
@@ -99,7 +134,6 @@ body{
 	left: 87%;
 	bottom: 110px;
 	background-color: #F05023;
-
 }
 
 #btn-t6r{
@@ -134,6 +168,7 @@ body{
 
 }
 
+
 #btn-b2{
 	left: 30%;
 	top: 170px;
@@ -146,6 +181,45 @@ body{
 	top: 110px;
 	background-color: #4E232D;
 
+
+}
+
+.circle {
+  display: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  position: absolute;
+  background-color: transparent;
+  margin-left: -25px;
+  border-color: white;
+  border-style: solid;
+  padding:20px;
+}
+
+.circle:hover{
+  
+  cursor: pointer;
+}
+
+.skateboard{
+  left: 200px;
+  bottom: 300px;
+  display: block;
+  
+}
+
+.t8-strawberry{
+  left: 290px;
+  top: 130px;
+  
+}
+
+.t8-eggs{
+  left: 290px;
+  top: 480px;
+  
 }
 
 
@@ -154,28 +228,96 @@ body{
   <script>
   	$(document).ready(function() {
 
-  		$("btn-t6l").click(function() {
-  		
-  			$(".box s1").css({'background-image': 'url(t6.JPG)' });
+  		$("#btn-t6l").click(function() {
+  		$(".box.s1").css({'background-image': 'url(t6.JPG)' });
+  		$(".boxm1").css({'background-image': 'url(t6.png)' });
+      $(".circle").hide();
 
 		});
 
 		
-		$("btn-t8").click(function() {
-  		
-  			$(".box.s1").css({'background-image': 'url(t8.JPG)' });
+		$("#btn-t8").click(function() {
+  		$(".box.s1").css({'background-image': 'url(t8.JPG)' });
+  		$(".boxm1").css({'background-image': 'url(t8.png)' });
+      $(".circle").hide();
+      $(".t8-strawberry").show();
+      $(".t8-eggs").show();
+
+
+		});
+
+		$("#btn-t10").click(function() {
+  		$(".box.s1").css({'background-image': 'url(t10.JPG)' });
+  		$(".boxm1").css({'background-image': 'url(t10.png)' });
+      $(".circle").hide();
+
 
 		});
   	
+  		$("#btn-t12").click(function() {
+  		$(".box.s1").css({'background-image': 'url(t12.JPG)' });
+  		$(".boxm1").css({'background-image': 'url(t12.png)' });
+      $(".circle").hide();
 
-  		$("btn-b4").click(function() {
-  			$(".box s2").css({'background-image': 'url(t12.JPG)' });
-			});
-
-  		$("btn-b8").click(function() {
-  			$(".box s2").css({'background-image': 'url(b8.JPG)' });
-			});
+		});
   		
+  		$("#btn-t2").click(function() {
+  		$(".box.s1").css({'background-image': 'url(t2.jpg)' });
+  		$(".boxm1").css({'background-image': 'url(t2.png)' });
+      $(".circle").hide();
+
+		});
+  		
+  		$("#btn-t4").click(function() {
+  		$(".box.s1").css({'background-image': 'url(giphy.gif)' });
+  		$(".boxm1").css({'background-image': 'url(t4.png)' });
+      $(".circle").hide();
+
+
+		});
+  	
+  		$("#btn-t6r").click(function() {
+  		$(".box.s1").css({'background-image': 'url(t6r.JPG)' });
+  		$(".boxm1").css({'background-image': 'url(t6r.png)' });
+      $(".circle").hide();
+
+		});
+  	
+  	
+
+  		$("#btn-b8").click(function() {
+  		$(".box.s2").css({'background-image': 'url(b8.JPG)' });
+  		$(".boxm2").css({'background-image': 'url(b8.png)' });
+      $(".circle").hide();
+		});
+
+  		$("#btn-b10").click(function() {
+  		$(".box.s2").css({'background-image': 'url(b10.JPG)' });
+  		$(".boxm2").css({'background-image': 'url(b10.png)' });
+      $(".circle").hide();
+		});
+
+		$("#btn-b12").click(function() {
+  		$(".box.s2").css({'background-image': 'url(board.gif)' });
+  		$(".boxm2").css({'background-image': 'url(b12.png)' });
+      $(".circle").hide();
+      $(".skateboard").show();
+		});
+
+		$("#btn-b2").click(function() {
+  		$(".box.s2").css({'background-image': 'url(b2.JPG)' });
+  		$(".boxm2").css({'background-image': 'url(b2.png)' });
+      $(".circle").hide();
+		});
+
+		$("#btn-b4").click(function() {
+  		$(".box.s2").css({'background-image': 'url(b2.JPG)' });
+  		$(".boxm2").css({'background-image': 'url(b2.png)' });
+      $(".circle").hide();
+		});
+  		
+
+  		});
 
 
   </script>
@@ -187,12 +329,13 @@ body{
 
   
 
-
-
   
   <div class="box s1">
-  	
+
+    <a href="strawberry/fruit.html"><button class="circle t8-strawberry"></button> </a>
+    <a href="egg/index.html"><button class="circle t8-eggs"></button> </a>
 	  <div class="nav day">
+	  <div class="boxm1"></div>
 		<button id="btn-t6l">6</button>
 		<button id="btn-t8">8</button>
 		<button id="btn-t10">10</button>
@@ -200,22 +343,31 @@ body{
 		<button id="btn-t2">2</button>
 		<button id="btn-t4">4</button>
 		<button id="btn-t6r">6</button>
+		
 	  </div>
+
+	 
 
   </div>
 
   <div class="box s2">
-  	
-  	
-	  <div class="nav night">
+   <a href="skatboard/index.html"><button class="circle skateboard"></button> </a>
+  <div class="nav night">
+	  <div class="boxm2"></div>
 		<button id="btn-b8">8</button>
 		<button id="btn-b10">10</button>
 		<button id="btn-b12">12</button>
 		<button id="btn-b2">2</button>
 		<button id="btn-b4">4</button>
+	
 	  </div>
 
   </div>
+
+
+
+
+  
   
 
 
